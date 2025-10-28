@@ -3,9 +3,9 @@
 ## Student Information
 - Name: [REDDY NIKHILA]
 - Student ID: [23P31A0547]
-- Repository: [https://github.com/nikhilareddy28/git-solved-23p31a0547.git]
+- Repository: [https://github.com/nikhilareddy28/git-solved-23p31a0547]
 - Date Started: [28-10-2025]
-- Date Completed: [28-10=2025]
+- Date Completed: [28-10-2025]
 
 ## Task Summary
 Cloned instructor's repository with pre-built conflicts and resolved all 
