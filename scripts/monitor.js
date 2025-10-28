@@ -31,8 +31,8 @@ const monitorConfig = {
 const config = monitorConfig[ENV];
 
 console.log('================================================');
-console.log(DevOps Simulator - Monitor (${ENV.toUpperCase()}));
-console.log(Debug: ${config.debugMode ? 'ENABLED' : 'DISABLED'});
+console.log(`DevOps Simulator - Monitor (${ENV.toUpperCase()})`);
+console.log(`Debug: ${config.debugMode ? 'ENABLED' : 'DISABLED'}`);
 if (ENV === 'experimental') {
   console.log('AI-Powered Predictive Monitoring ENABLED');
 }
@@ -49,7 +49,7 @@ function predictFutureMetrics() {
     confidence: (Math.random() * 30 + 70).toFixed(2)
   };
 
-  console.log(📊 Predicted metrics in ${config.predictiveWindow}s:);
+  console.log(`📊 Predicted metrics in ${config.predictiveWindow}s:`);
   console.log(`   CPU: ${prediction.cpu.toFixed(2)}% (confidence: ${prediction.confidence}%)`);
   console.log(`   Memory: ${prediction.memory.toFixed(2)}% (confidence: ${prediction.confidence}%)`);
   console.log(`   Traffic: ${prediction.traffic.toFixed(0)} req/s (confidence: ${prediction.confidence}%)`);
@@ -63,11 +63,11 @@ function predictFutureMetrics() {
 
 function checkSystemHealth() {
   const timestamp = new Date().toISOString();
-  console.log(\n[${timestamp}] === HEALTH CHECK (${ENV.toUpperCase()}) ===);
+  console.log(`\n[${timestamp}] === HEALTH CHECK (${ENV.toUpperCase()}) ===`);
 
   if (ENV === 'experimental') {
     config.cloudProviders.forEach(cloud => {
-      console.log(\n☁  ${cloud.toUpperCase()} Status:);
+      console.log(`\n☁  ${cloud.toUpperCase()} Status:`);
       console.log(`   ✓ Instances: ${Math.floor(Math.random() * 10 + 5)}`);
       console.log(`   ✓ Load: ${(Math.random() * 100).toFixed(2)}%`);
       console.log(`   ✓ Health: ${Math.random() > 0.1 ? 'HEALTHY' : 'DEGRADED'}`);
@@ -112,7 +112,7 @@ function checkSystemHealth() {
 
 if (ENV === 'experimental' && config.aiEnabled) {
   console.log('Loading AI models...');
-  console.log(✓ Model loaded: ${config.mlModelPath});
+  console.log(`✓ Model loaded: ${config.mlModelPath}`);
   console.log('✓ TensorFlow.js initialized');
   console.log('✓ Anomaly detection ready');
 
@@ -123,6 +123,6 @@ if (ENV === 'experimental' && config.aiEnabled) {
   }, 120000); // Every 2 minutes
 }
 
-console.log(Monitoring interval: ${config.interval}ms);
+console.log(`Monitoring interval: ${config.interval}ms`);
 setInterval(checkSystemHealth, config.interval);
 checkSystemHealth();
