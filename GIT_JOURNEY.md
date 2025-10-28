@@ -82,7 +82,28 @@ S
 
 ### Merge 2: main + conflict-simulator (6 files)
 
-[Document the second set of conflicts similarly]
+#### Conflict 1: config/app-config.yaml
+- **Issue**: Conflict between stable production and AI-driven experimental configuration.
+- **Resolution**: Integrated experimental mode with production and development setups.
+-**Strategy**: Added new experimental environment with advanced AI and multi-cloud settings.
+- **Difficulty**: Hard
+- **Time**: 25 minutes
+
+#### Conflict 2: config/database-config.json
+- *Issue*: Conflicting schema between standard DB profiles and distributed AI cluster configuration.
+- **Resolution**: Combined production, development, and experimental configurations under structured JSON hierarchy.
+- **Strategy**: Supported multiple database modes with advanced replication and monitoring fields.
+- **Difficulty**: Hard
+- **Time**: 20 minutes
+
+#### Conflict 3: scripts/deploy.sh
+- *Issue*: Conflict between simple Docker-based deployment and AI-enabled multi-cloud deployment logic.
+- **Resolution**: Enhanced script to handle experimental environment with canary rollout, AI analysis, and chaos testing.
+- **Strategy**: Modularized script with environment-aware sections.
+- **Difficulty**: Hard
+- **Time**: 25 minutes
+
+
 
 ## Most Challenging Parts
 
