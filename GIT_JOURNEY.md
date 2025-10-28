@@ -97,11 +97,31 @@ S
 - **Time**: 20 minutes
 
 #### Conflict 3: scripts/deploy.sh
-- *Issue*: Conflict between simple Docker-based deployment and AI-enabled multi-cloud deployment logic.
+- **Issue**: Conflict between simple Docker-based deployment and AI-enabled multi-cloud deployment logic.
 - **Resolution**: Enhanced script to handle experimental environment with canary rollout, AI analysis, and chaos testing.
 - **Strategy**: Modularized script with environment-aware sections.
 - **Difficulty**: Hard
 - **Time**: 25 minutes
+#### Conflict 4: scripts/monitor.js
+- **Issue**: Mismatch between standard monitoring logic and AI-powered predictive monitoring features.
+- **Resolution**: Unified monitoring system with production, development, and experimental support.
+- **Strategy**: Added AI model integration and predictive metrics using TensorFlow.js.
+-**Difficulty**: Hard
+- **Time**: 25 minutes
+
+#### Conflict 5: docs/architecture.md
+- **Issue**: Overlap between base system architecture and commented experimental sections.
+- **Resolution**: Retained production and development architecture; restored experimental details in commented form for clarity.
+- **Strategy**: Consolidated all environment architectures with clear separation.
+-**Difficulty**: Medium
+- **Time**: 15 minutes
+
+#### Conflict 6: README.md
+- **Issue**: Conflict between base project info and hidden experimental version details.
+- **Resolution**: Merged all environments (production, development, experimental) into a single unified README.
+- **Strategy**: Highlighted each environment under its section; added AI-driven enhancements as commented references.
+-**Difficulty**: Easy
+- **Time**: 10 minutes
 
 
 
